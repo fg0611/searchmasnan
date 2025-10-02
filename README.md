@@ -41,3 +41,7 @@ SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 HN_BASE_URL=[https://hacker-news.firebaseio.com/v0](https://hacker-news.firebaseio.com/v0)
 HN_TOP_STORIES_ENDPOINT=/topstories.json
 HN_ITEM_ENDPOINT=/item
+
+
+# Para correr en Docker
+docker run -p 3000:3000 tech-test-api
