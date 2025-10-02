@@ -45,13 +45,14 @@ HN_ITEM_ENDPOINT=/item
 
 # Para correr en Docker
 npm rundocker:build
+<!-- y luego -->
+npm rundocker:run
 
 <!-- esta linea da acceso el .env con los datos correctos -->
 docker run -p 3000:3000 --env-file ./.env tech-test-api
 
 <!-- si se descomenta linea "COPY --from=builder /app/.env ./" usar esto -->
 docker run -p 3000:3000 tech-test-api
-
 
 # Para usar la ruta publica de Render
 
