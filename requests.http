@@ -18,3 +18,18 @@ GET http://localhost:3000/api/data?author=askl
 ### RUTA 3: GET /api/export-csv
 # Genera y descarga un archivo CSV con toda la información almacenada.
 GET http://localhost:3000/api/export-csv
+
+
+### RUTA 1: POST /api/external-data (Poblar DB)
+# Ejecuta esta petición para llenar Supabase con datos antes de consultar.
+POST https://searchmasnan.onrender.com/api/external-data
+Content-Type: application/json
+
+### RUTA 2A: GET /api/data (Paginado y Score DESC)
+GET https://searchmasnan.onrender.com/api/data?page=1&limit=10&sortField=score&sortOrder=desc
+
+### RUTA 2B: GET /api/data (Filtro por Título 'AI')
+GET https://searchmasnan.onrender.com/api/data?page=1&limit=5&title=AI&sortField=created_at&sortOrder=asc
+
+### RUTA 2B: GET /api/data (Filtro por Título 'AI')
+GET https://searchmasnan.onrender.com/api/data?page=1&limit=5&title=AI&sortField=created_at&sortOrder=asc
