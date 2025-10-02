@@ -44,4 +44,22 @@ HN_ITEM_ENDPOINT=/item
 
 
 # Para correr en Docker
+npm rundocker:build
+
+<!-- esta linea da acceso el .env con los datos correctos -->
+docker run -p 3000:3000 --env-file ./.env tech-test-api
+
+<!-- si se descomenta linea "COPY --from=builder /app/.env ./" usar esto -->
 docker run -p 3000:3000 tech-test-api
+
+
+# Para usar la ruta publica de Render
+
+<!-- Extrae las top 50 historias de Hacker News y las almacena en Supabase. -->
+https://searchmasnan.onrender.com/api/external-data
+
+<!-- Devuelve datos. Usa query parameters para modificar la respuesta. -->
+https://searchmasnan.onrender.com/api/data
+
+<!-- Genera y descarga un archivo CSV con todos los datos. -->
+https://searchmasnan.onrender.com/api/export-csv
