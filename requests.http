@@ -33,3 +33,7 @@ GET https://searchmasnan.onrender.com/api/data?page=1&limit=5&title=AI&sortField
 
 ### RUTA 2B: GET /api/data (Filtro por Título 'AI')
 GET https://searchmasnan.onrender.com/api/data?page=1&limit=5&title=AI&sortField=created_at&sortOrder=asc
+
+### RUTA 3: GET /api/export-csv (Descarga)
+# Genera el CSV y recibe el contenido en formato de texto.
+GET https://searchmasnan.onrender.com/api/export-csv
