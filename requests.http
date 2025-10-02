@@ -5,13 +5,16 @@ Content-Type: application/json
 
 {}
 
-
 ### RUTA 2B: GET /api/data - Filtrado, Ordenamiento y Paginado
 # Obtiene los 5 ítems más relevantes que contengan "AI" en el título,
 # ordenados por Puntuación (Score) de mayor a menor.
 GET http://localhost:3000/api/data?page=1&limit=5&title=ai&sortField=score&sortOrder=desc
 
-
 ### RUTA 2C: GET /api/data - Filtrado por Autor
 # Busca ítems creados por el autor 'pg' (si existe en los datos).
 GET http://localhost:3000/api/data?author=askl
+
+
+### RUTA 3: GET /api/export-csv
+# Genera y descarga un archivo CSV con toda la información almacenada.
+GET http://localhost:3000/api/export-csv
