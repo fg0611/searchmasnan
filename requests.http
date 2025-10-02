@@ -1,0 +1,17 @@
+### RUTA 1: POST /api/external-data
+# Extrae datos de la API externa (Hacker News) y los almacena en Supabase.
+POST http://localhost:3000/api/external-data
+Content-Type: application/json
+
+{}
+
+
+### RUTA 2B: GET /api/data - Filtrado, Ordenamiento y Paginado
+# Obtiene los 5 ítems más relevantes que contengan "AI" en el título,
+# ordenados por Puntuación (Score) de mayor a menor.
+GET http://localhost:3000/api/data?page=1&limit=5&title=ai&sortField=score&sortOrder=desc
+
+
+### RUTA 2C: GET /api/data - Filtrado por Autor
+# Busca ítems creados por el autor 'pg' (si existe en los datos).
+GET http://localhost:3000/api/data?author=askl

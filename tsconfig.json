@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "target": "es2020",                                /* Especifica la versión del lenguaje ECMAScript. */
+    "module": "commonjs",                              /* Especifica el sistema de módulos (ES Modules para Node moderno). */
+    "rootDir": "./src",                                /* Define la carpeta raíz de los archivos TypeScript. */
+    "outDir": "./dist",                                /* Define el directorio de salida para los archivos compilados (JavaScript). */
+    "esModuleInterop": true,                           /* Permite importar módulos CommonJS como módulos ES. */
+    "forceConsistentCasingInFileNames": true,          /* Asegura consistencia en mayúsculas/minúsculas de los nombres de archivo. */
+    "strict": true,                                    /* Habilita todas las opciones de verificación de tipo estricto. */
+    "skipLibCheck": true,                              /* Omite la comprobación de tipo de archivos de declaración. */
+    "resolveJsonModule": true                          /* Permite importar archivos JSON. */
+  },
+  "include": [
+    "src/**/*"                                         /* Incluye todos los archivos .ts dentro de la carpeta src. */
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
