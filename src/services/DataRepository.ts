@@ -29,7 +29,7 @@ export class DataRepository {
         // Usamos upsert para: 1. Insertar si no existe. 2. Actualizar si ya existe.
         const { error } = await supabase
             .from(TABLE_NAME)
-            .upsert(dbItems, { 
+            .upsert(dbItems, {
                 onConflict: 'id', // Conflicto basado en la PK (id)
                 ignoreDuplicates: false // Permite la actualización si hay conflicto
             });

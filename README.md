@@ -1,10 +1,4 @@
-¡Absolutamente\! Tienes razón, la documentación de la estructura de la base de datos es esencial para el `README.md`.
 
-He consolidado la información que me proporcionaste sobre la tabla `hn_items` y la he integrado en una nueva sección del `README.md`. También he limpiado y organizado la sección de comandos de Docker para mayor claridad.
-
-Aquí tienes el archivo `README.md` completo y actualizado:
-
-````markdown
 # 🚀 Prueba Técnica: API Node.js, Express, Supabase & IA
 
 Solución de prueba técnica implementada con un enfoque en la arquitectura modular (Servicios, Repositorios, Controladores) utilizando **Node.js, TypeScript, Express** y **Supabase** como base de datos.
@@ -132,6 +126,3 @@ La IA fue empleada como un acelerador para cumplir con los requisitos de la prue
 | **Utilidades** | Generación de la función `generateCsv` usando la librería `json2csv`. | La IA aceleró la implementación de una tarea estándar. El desarrollador definió los *fields* del CSV. |
 | **Plataformas** | Justificación del uso de Render sobre Vercel y generación de la guía de despliegue. | La IA proporcionó la justificación técnica, pero la **elección final** de la plataforma fue del desarrollador. |
 | **Documentación** | Estructuración y formato de todo el `README.md`, incluyendo la generación del JSON de Postman y la tabla de estructura DB. | La IA ayudó con el formato. El **contenido técnico (SQL, rutas, filtros)** fue provisto por el desarrollador. |
-
-```
-```
